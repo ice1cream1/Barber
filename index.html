@@ -9,7 +9,7 @@
         <link rel="icon" href="favicon.ico">
         <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="img/favicon/180.png">
-        <link rel="manifest" href="manifest.webmanifest"
+        <link rel="manifest" href="manifest.webmanifest">
     </head>
 
     <body class="page-body">
@@ -19,38 +19,44 @@
                 <a class="main-header-logo">
                     <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа">
                 </a>
-                <ul class="site-navigation">
-                    <il><a href="blank.html">Информация</a></il>
-                    <li><a href="blank.html">Новости</a></li>
-                    <li><a href="pice.html">Прайс-лист</a></li>
-                    <li><a href="catalog.html">Магазин</a></li>
-                    <li><a href="blank.html">Контакты</a></li>
-                </ul>
-                <a class="login-link" href="blank.html">Вход</a>
+                <div class="main-navigation-wrapper">
+                    <div class="container">
+                        <ul class="site-navigation">
+                            <il><a href="blank.html">Информация</a></il>
+                            <li><a href="blank.html">Новости</a></li>
+                            <li><a href="pice.html">Прайс-лист</a></li>
+                            <li><a href="catalog.html">Магазин</a></li>
+                            <li><a href="blank.html">Контакты</a></li>
+                        </ul>
+                        <div class="user-navigation"></div>
+                            <a class="login-link" href="blank.html">Вход</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>
 
         <main class="container">
 
-            <h1>Барбершоп "Бородинский"</h1>
+            <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
 
             <section class="features">
-                <h2>Преимущества</h2>
+                <h2 class="visually-hidden">Преимущества</h2>
                 <ul class="features-list">
-                    <li class="feature-item">
+                    <li class="features-item">
                         <h3>Быстро</h3>
                         <p>Мы делаем свою работу быстро! Два часа пролетят
                            незаметно и вы - счастливый обладатель стильной
                            стрижки-минутки!
                         </p>
                     </li>
-                    <li class="feature-item">
+                    <li class="features-item">
                         <h3>Круто</h3>
                         <p>Забудьт, как вы стриглись раньше. Мы сделаем из
                             вас звезду футбола или кино! Во всяком случае внешне.
                         </p>
                     </li>
-                    <li class="feature-item">
+                    <li class="features-item">
                         <h3>Дорого</h3>
                         <p>Наши мастера - профессионалы своего дела и не могут
                             стоить дешево. К тому же, разве цена не дает определенный статус?
@@ -59,76 +65,83 @@
                 </ul>
             </section>
 
-            <section class="news">
-                <h2>Новости</h2>
-                <ul class="news-list">
-                    <li class="news-item"><p>Нам наконец завезли Ягермайстер! теперь вы можете
-                        пропустить стаканчик вов ремя стрижки</p>
-                        <time datetime="2021-07-01">7 июля</time>
-                    </li>
-                    <li class="news-item">
+            <div class="index-columns">
+
+                <section class="news">
+                    <h2>Новости</h2>
+                    <ul class="news-list">
+                        <li class="news-item"><p>Нам наконец завезли Ягермайстер! теперь вы можете
+                            пропустить стаканчик вов ремя стрижки</p>
+                            <time datetime="2021-07-01">7 июля</time>
+                        </li>
+                        <li class="news-item">
                         <p>В нашей команде пополнение, Борис (Бритва)
                             Стригунцев, обладатель множества титулов и наград пополнил наши
                             стройные ряды
-                        </p>
+                            </p>
                         <time datetime="2021-07-01">7 июля</time>
-                    </li>
-                </ul>
-                <a class="button" href="index.html">Все новости</a>
-            </section>
+                        </li>
+                    </ul>
+                    <a class="button" href="index.html">Все новости</a>
+                </section>
 
-            <section class="gallery">
-                <h2>Фотогалерея</h2>
-                <figure class="gallery-content">
-                    <a href="#">
-                        <img src="img/studio.jpg" width="286" height="164"
-                        alt="Интерьер">
-                    </a>
-                </figure>
-                <button class="button gallery-button gallery-button-back" type="button" disabled>Назад</button>
-                <button class="button gallery-button gallery-button-next" type="button">Вперёд</button>
-            </section>
+                <section class="gallery">
+                    <h2>Фотогалерея</h2>
+                    <figure class="gallery-content">
+                        <a href="#">
+                            <img src="img/studio.jpg" width="286" height="164"
+                            alt="Интерьер">
+                        </a>
+                    </figure>
+                    <button class="button gallery-button gallery-button-back" type="button" disabled>Назад</button>
+                    <button class="button gallery-button gallery-button-next" type="button">Вперёд</button>
+                </section>
+            
+            </div>
+            
+            <div class="index-columns"
 
-            <section class="contacts">
-                <h2>Контактная информация</h2>
-                <p>
-                 Барбершоп (Бородинский)<br>
-                 Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                 Телефон: <a class="contscts-phone" href="tel:+78126660266">+ 7 (812) 666-02-66</a>
-                </p>
-                <p>
-                    Время работы:<br>
-                    пн-пт: с 10:00 до 22:00<br>
-                    сб-вс: с 10:00 до 19:00
-                </p>
-                <a class="button" href="index.html">Как проехать</a>
-                <a class="button" href="index.html">Обратная связь</a>
-            </section>
+                <section class="contacts">
+                    <h2>Контактная информация</h2>
+                    <p>
+                     Барбершоп (Бородинский)<br>
+                     Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                     Телефон: <a class="contscts-phone" href="tel:+78126660266">+ 7 (812) 666-02-66</a>
+                    </p>
+                    <p>
+                        Время работы:<br>
+                        пн-пт: с 10:00 до 22:00<br>
+                        сб-вс: с 10:00 до 19:00
+                    </p>
+                    <a class="button" href="index.html">Как проехать</a>
+                    <a class="button" href="index.html">Обратная связь</a>
+                </section>
 
-            <section class="appointment">
-                <h2>Записаться</h2>
-                <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для
-                    подтверждения брони</p>
-                <form class="appointment-form" action="https:/echo..." method="POST">
-                    <p class="appointment-item">
-                        <label for="appointment-date">Дата</label>
-                        <input id="appointment-data" type="text" name="date" placeholder="01.01.2021">
-                    </p>  
-                    <p class="appointment-item">
-                        <label for="appointment-time">Время</label>
-                        <input id="appointment-time" type="text" name="time" placeholder="10:10">
-                    </p>
-                    <p class="appointment-item">
-                        <label for="appointment-name">Ваше имя</label>
-                        <input id="appointment-name" type="text" name="name" placeholder="Василиск">
-                    </p>
-                    <p class="appointment-item">
-                        <label for="appointment-phone">Телефон</label>
-                        <input id="appointment-phone" type="text" name="phone" placeholder="+7 000 000-00-00">
-                    </p>
-                    <button class="button" type="submit">Отправить</button>  
-                </form>
-            </section>
+                <section class="appointment">
+                    <h2>Записаться</h2>
+                    <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для
+                        подтверждения брони</p>
+                    <form class="appointment-form" action="https:/echo..." method="POST">
+                        <p class="appointment-item">
+                            <label for="appointment-date">Дата</label>
+                            <input id="appointment-data" type="text" name="date" placeholder="01.01.2021">
+                        </p>  
+                        <p class="appointment-item">
+                            <label for="appointment-time">Время</label>
+                            <input id="appointment-time" type="text" name="time" placeholder="10:10">
+                        </p>
+                        <p class="appointment-item">
+                            <label for="appointment-name">Ваше имя</label>
+                            <input id="appointment-name" type="text" name="name" placeholder="Василиск">
+                        </p>
+                        <p class="appointment-item">
+                            <label for="appointment-phone">Телефон</label>
+                            <input id="appointment-phone" type="text" name="phone" placeholder="+7 000 000-00-00">
+                        </p>
+                        <button class="button" type="submit">Отправить</button>  
+                    </form>
+                </section>
+            </div>    
 
         </main>
 
