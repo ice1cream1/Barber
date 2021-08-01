@@ -83,6 +83,14 @@ page {
   background-color: transparent;
 }
 
+/* Container */
+
+.container {
+  width: 940;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 /* Logo */
 
 .main-header-logo {
@@ -128,7 +136,16 @@ page {
 
 /* Features */
 
+.features {
+  margin-bottom: 80px;
+}
+
 .features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -141,14 +158,21 @@ page {
   line-height: 42px;
 }
 
+.features-item p {
+  margin: 0 10px;
+}
+
 /* index-columns*/
 
 .index-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
   background-image: url("../img/Layer\ 10\ copy.jpg");
   background-position: center; 0 0;
   background-repeat: no-repeat, repeat;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .index-columns h2 {
@@ -220,8 +244,6 @@ page {
   background-image: url("../img/Layer\ 23.jpg");
   background-position: 0 0;
   background-repeat:repeat;
-  outline: 5px solid rgba(225, 0, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .footer-contacts a {
